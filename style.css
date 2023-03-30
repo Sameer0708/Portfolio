@@ -1,7 +1,225 @@
-body
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/* body
 {
-    background-image: url("Images/Background.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 200vh; 
+    overflow: hidden;
+} */
+#container
+{
+    width: 100%;
+    min-height: 100vh;
+    background-color: aliceblue;
+}
+nav
+{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    height: 80px;
+    line-height: 70px;
+    z-index: 111;
+    /* background-color:aqua; */
+    border-bottom: 1px solid darkmagenta;    
+}
+.logo
+{
+    display: flex;
+    font-size: 40px;
+    font-weight: 800;
+    color: black;
+    letter-spacing: 3px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.navItems
+{
+    display: flex;
+}
+.navItems li{
+    list-style: none;
+    margin: 0 20px;
+}
+.navItems li a{
+    font-size: 23px;
+    color: black;
+    letter-spacing: 3px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.navItems li:hover a, .social a:hover
+{
+    color: darkmagenta;
+}
+.social a
+{
+    font-size: 25px;
+    color: black;
+    margin: 25px 10px;
+}
+.wrapper
+{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10%;
+    overflow: hidden;
+}
+.wrapper::before
+{
+    position: absolute;
+    content: '';
+    height: 600px;
+    width: 600px;
+    border-radius: 50%;
+    left: -12%;
+    top: 40%;
+    background: linear-gradient(45deg,darkmagenta,rgb(0, 255, 217));
+    animation: object1 6s linear infinite;
+}
+.wrapper::after
+{
+    position: absolute;
+    content: '';
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    left: 35%;
+    top: 12%;
+    background: linear-gradient(45deg,darkmagenta,rgb(0, 255, 217));
+    animation: object2 6s linear infinite;
+}
+@keyframes object1{
+    50%{
+        left: -13%;
+        top: 41%;
+    }
+}
+@keyframes object2{
+    50%{
+        left: 35%;
+        top: 15%;
+    }
+}
+.cols0{
+    z-index: 5;
+}
+.cols
+{
+    width: 50%;
+}
+.topline
+{
+    display: block;
+    position: relative;
+    font-size: 35px;
+    letter-spacing: 5px;
+    color: rgb(139, 0, 79);
+}
+.topline::after
+{
+    position: absolute;
+    content: '';
+    height: 4px;
+    width: 45px;
+    bottom: 10px;
+    background-color: wheat;
+}
+h1
+{
+    display: block;
+    font-size: 80px;
+    font-weight: 800;
+}
+.multitext
+{
+    color:blueviolet;
+    text-transform: capitalize;
+    font-size: 65px;
+    margin: 0;
+    padding: 0;
+}
+.I
+{
+    font-size: 60px;
+    margin: 0;
+    padding: 0;
+
+}
+p
+{
+    display: block;
+    width: 90%;
+    font-size: 20px;
+}
+.btns
+{
+    width: 100%;
+    position: relative;
+    left: 36px;
+    display: flex;
+    justify-content: space-between;
+}
+button:hover{
+    background-color: blueviolet;
+}
+button{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight:400;
+    color: black;
+    background-color: rgb(0, 255, 213);
+    border-radius: 10px;
+    text-transform: capitalize;
+    padding: 8px 14px;
+    margin: 40px 5px;
+    letter-spacing: 2px;
+    text-transform:capitalize;
+    box-shadow: 0 15px 10px rgba(0,0,0,0.4);
+}
+.imgbox
+{
+    width: 46pc;
+    height: 30pc;
+    border-radius: 30px;
+    position: relative;
+}
+.imgbox img{
+    position: relative;
+    height: 100%;
+    width: calc(130% - 80px);
+    top: -100px;
+    right: 50px;
+    animation: animateuser 8s linear infinite;
+}
+@keyframes animateuser{
+    50%{
+        right:30px;
+        top: 90px;
+    }
+}
+.imgbox #splash
+{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(-35deg);
+    width: 160%;
+    filter: saturate(200%);
+    animation: animate 4s linear infinite;
+}
+@keyframes animate{
+    50%{
+        top: 49%;
+        left: 51%;
+        width: 155%;
+    }
 }

@@ -1,39 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <ul class="nav justify-content-center pt-4">
-        <img class="backgroundimg">
-        <li class="nav-item">
-          <a class="nav-link active hello header" aria-current="page" href="#">HOME</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link hello header" href="#about">ABOUT</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link hello header" href="#services">SERVICES</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link hello header" href="#testimonals">TESTIMONALS</a>
-          </li>
-          <li class="nav-item head">
-            <a class="nav-link hello header" href="#contact">CONTACT</a>
-          </li>
-    </ul><br/>
+    <section id="container">
+      <nav>
+        <div class="logo">Sameer</div>
+        <ul class="navItems">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="social">
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </nav>
+    
 
+    <div class="wrapper">
+      <div class="cols cols0">
+        <span class="topline">Hello, My Name is <span>Sameer Purnachandra Sahu</span></span>
+        <p class="I">I'm <span class="multitext"></span></p>
+        <p>I am a Full Stack Developer. My expertise is to Create and Design Website and many more...</p>
+        <div class="btns">
+          <button>Download Resume</button>
+          <!-- <button>Hire Me</button> -->
+        </div>
+      </div>
+      <div class="cols cols1">
+        <img src="Images/BGMIMG.png" class="imgbox" alt="Background">
+        <!-- <img src="Images/Backgroundimg.jpg" id="splash" alt="Background2" class="imgbox"> -->
+    </div>
 
-
-
-
-
-
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  
+  
+  </section>
+  <script src="https://unpkg.com/typed.js@2.0.14/dist/typed.umd.js"></script>
+  <script>
+    var typingEffect = new Typed(".multitext",{
+      strings : ["Developer","Programmer"],
+      loop : true,
+      typeSpeed : 80,
+      backSpeed : 80,
+      backDelay : 1000
+    })
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>
